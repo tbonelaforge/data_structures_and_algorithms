@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+void isPalindrome(string a,int i) {
+    int b = (a.length()-1 - i);
+    //cout << a[i] << " " << a[b] << endl;
+    if (i <= (a.length() / 2)) {
+        if (a[i] == a[b])
+            isPalindrome(a, i + 1);
+        else
+            cout << a << " Is not a Palindrome" << endl;
+    }
+    else
+        cout << a << " Is a Palindrome" << endl;
+}
+;
+
+int main()
+{
+    string userEntry;
+    cout << "Enter word:" << endl;
+    getline(cin,userEntry);
+
+    isPalindrome(userEntry,0);
+}

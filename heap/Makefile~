@@ -1,0 +1,2 @@
+HeapTest: HeapTest.cpp Heap.hpp
+	g++ HeapTest.cpp -o HeapTest

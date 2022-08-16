@@ -1,0 +1,20 @@
+enqueue 7
+enqueue 8
+enqueue 9
+getLength
+enqueue 10
+getLength
+isFull
+dequeue
+isFull
+isEmpty
+enqueue 11
+dequeue
+enqueue 12
+enqueue 3
+dequeue
+getLength
+dequeue
+getLength
+dequeue
+getLength

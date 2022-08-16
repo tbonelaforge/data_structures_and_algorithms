@@ -1,0 +1,9 @@
+PutItem 1
+PutItem 2
+PutItem 1
+PrintList
+GetLength
+DeleteItem 1
+PrintList
+GetLength
+Quit

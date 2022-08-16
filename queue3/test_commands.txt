@@ -1,0 +1,28 @@
+print
+enqueue 7
+print
+enqueue 8
+print
+enqueue 9
+enqueue 10
+print
+dequeue
+print
+isEmpty
+enqueue 11
+print
+dequeue
+print
+enqueue 12
+print
+enqueue 3
+print
+dequeue
+dequeue
+print
+dequeue
+print
+dequeue
+print
+dequeue
+print

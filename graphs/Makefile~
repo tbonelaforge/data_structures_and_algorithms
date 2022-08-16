@@ -1,0 +1,2 @@
+GraphTest: GraphTest.cpp Graph.hpp List.hpp
+	g++ GraphTest.cpp -o GraphTest

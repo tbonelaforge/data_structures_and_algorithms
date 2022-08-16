@@ -1,0 +1,5 @@
+print
+enqueue 7
+print
+enqueue 8
+print

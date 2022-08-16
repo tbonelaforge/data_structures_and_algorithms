@@ -1,0 +1,24 @@
+#ifndef _INTEGER_QUEUE_H_
+#define _INTEGER_QUEUE_H_
+
+template <class ItemType>
+class Queue {
+ public:
+    Queue();
+    void enqueue(ItemType item);
+    ItemType dequeue();
+    bool isFull();
+    bool isEmpty();
+ private:
+    ItemType items[5];
+    int f;
+    int r;
+};
+
+template <class ItemType>
+Queue<ItemType>::Queue<ItemType>() {
+    f = 0;
+    r = 0;
+}
+
+#endif

@@ -1,0 +1,12 @@
+putItem
+3
+putItem
+2
+putItem
+1
+printList
+getLength
+deleteItem
+4
+printList
+getLength

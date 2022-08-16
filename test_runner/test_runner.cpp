@@ -1,0 +1,34 @@
+#include <iostream>
+#include <fstream>
+
+int main(int argc, char * argv[]) {
+    using namespace std;
+    cout << "Got called with argc: " << argc
+         << " And argv: " << argv << endl;
+    for (int i = 0; i < argc; i++) {
+        cout << "The argument at position " << i << " is " << argv[i]
+             << endl;
+    }
+    if (argc < 2) {
+        cout << "Error: Missing Input Filename" << endl
+             << "Usage: \n" << argv[0] << " test_cases.txt\n" << endl;
+        return 1;
+    }
+    ifstream inFile;
+    inFile.open(argv[1]);
+    if (!inFile) {
+        cout << "File " << argv[1] << " was not found." << endl;
+        return 1;
+    }
+    string command;
+    int numerator, denominator;
+    while (inFile >> command) {
+        cout << "Read command:" << command << endl;
+        if (command == "Initialize") {
+            inFile >> numerator >> denominator;
+            cout << "Read numerator: " << numerator 
+                 << " Read Denominator: " << denominator << endl;
+        }
+    }
+    
+}

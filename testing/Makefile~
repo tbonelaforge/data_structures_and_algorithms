@@ -1,0 +1,3 @@
+
+divide.o: divide.cpp
+	g++ -c divide.cpp -o divide.o

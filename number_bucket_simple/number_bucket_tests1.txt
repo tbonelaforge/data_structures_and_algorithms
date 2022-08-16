@@ -1,0 +1,15 @@
+new
+getSize
+isEmpty
+push
+5
+getSize
+isEmpty
+pop
+getSize
+isEmpty
+pop
+push
+7
+delete
+

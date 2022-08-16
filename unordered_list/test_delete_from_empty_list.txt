@@ -1,0 +1,3 @@
+PrintList
+DeleteItem 42
+PrintList

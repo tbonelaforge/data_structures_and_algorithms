@@ -1,0 +1,107 @@
+#include <iostream>
+
+#include "DateType.h"
+#include "RelationType.h"
+
+
+
+
+void DateType::Initialize(int newYear, int newMonth, int newDay) {
+    year = newYear;
+    month = newMonth;
+    day = newDay;
+}
+
+int DateType::getYear() const {
+    return year;
+}
+
+int DateType::getMonth() const {
+    return month;
+}
+
+int DateType::getDay() const {
+    return day;
+}
+
+RelationType DateType::compareTo(DateType other) const {
+    if (year < other.year) {
+        return LESS;
+    } else if (year > other.year) {
+        return GREATER;
+    } else if (month < other.month) {
+        return LESS;
+    } else if (month > other.month) {
+        return GREATER;
+    } else if (day < other.day) {
+        return LESS;
+    } else if (day > other.day) {
+        return GREATER;
+    } else {
+        return EQUAL;
+    }
+}
+
+string DateType::monthIndex[] = {
+    "Error",
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November"
+};
+    
+string DateType::getMonthAsString() const {
+    return monthIndex[getMonth()];
+}
+
+int DateType::monthLookup[] = {
+    -1,
+    31, // January
+    28, // February
+    31, // March
+    30, // April
+    31, // May
+    30, // June
+    31, // July
+    31, // August
+    30, // September
+    31, // October
+    30, // November
+    31, // December
+};
+
+int DateType::calculateNumDays(int month, int year) {
+    int result = monthLookup[month];
+    if (month == 2 && isLeapYear(year)) {
+        result += 1;
+    }
+    return result;
+}
+
+bool DateType::isLeapYear(int year) {
+    return ((year % 4 == 0) && !(year % 100)) || (year % 400);
+}
+
+DateType DateType::addDays(int days) {
+    int newDay = day + days;
+    int newMonth = month;
+    int newYear = year;
+    int theseDays;
+    while (newDay > (theseDays = calculateNumDays(newMonth, newYear))) {
+        newDay -= theseDays;
+        if (newMonth >= 12) {
+            newYear += 1;
+        }
+        newMonth = (newMonth % 12) + 1;
+    }
+    DateType newDate;
+    newDate.Initialize(newYear, newMonth, newDay);
+    return newDate;
+}

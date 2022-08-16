@@ -1,0 +1,6 @@
+
+template <class VertexType>
+struct WeightedEdge {
+    VertexType source;
+    VertexType destination;
+}

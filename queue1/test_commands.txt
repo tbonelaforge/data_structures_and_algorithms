@@ -1,0 +1,14 @@
+enqueue 7
+enqueue 8
+enqueue 9
+enqueue 10
+isFull
+dequeue
+isFull
+isEmpty
+enqueue 11
+dequeue
+enqueue 12
+enqueue 3
+dequeue
+dequeue

@@ -1,0 +1,28 @@
+#include "fraction.h"
+
+void FractionType::Initialize(int numerator, int denominator) {
+    this->numerator = numerator;
+    this->denominator = denominator;
+}
+
+int FractionType::getNumerator() {
+    return numerator;
+}
+
+int FractionType::getDenominator() {
+    return denominator;
+}
+
+bool FractionType::isNotProper() {
+    return numerator > denominator;
+}
+
+bool FractionType::isZero() {
+    return numerator == 0;
+}
+
+int FractionType::convertToProper() {
+    int wholePart = numerator / denominator;
+    int remainder = numerator % denominator;
+    numerator = remainder;
+}

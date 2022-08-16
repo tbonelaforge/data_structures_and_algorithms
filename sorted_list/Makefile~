@@ -1,0 +1,2 @@
+SortedList.o: SortedList.cpp SortedList.h ItemType.h
+	g++ -c SortedList.cpp -o SortedList.o

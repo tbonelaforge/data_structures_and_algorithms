@@ -1,0 +1,10 @@
+Initialize
+3
+4
+isZero
+isNotProper
+Initialize
+4
+3
+isNotProper
+convertToProper

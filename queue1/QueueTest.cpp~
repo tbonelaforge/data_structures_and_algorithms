@@ -1,0 +1,10 @@
+#include <iostream>
+
+#include "Queue.h"
+
+int main() {
+    cout << "About to construct 3 different queues for three different item types...\n";
+    Queue<int> iq;
+    Queue<float> fq;
+    Queue<char> cq;
+}

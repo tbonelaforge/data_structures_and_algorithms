@@ -1,0 +1,11 @@
+#include <iostream>
+
+using namespace std;
+class A {
+public:
+    void foo() { cout << "A.foo got called..." << endl; } 
+};
+
+class B : public A {
+    
+}

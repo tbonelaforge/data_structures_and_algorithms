@@ -1,0 +1,17 @@
+class FractionType {
+ public:
+    void Initialize(int numerator, int denominator);
+
+    bool isZero();
+
+    bool isImproper();
+
+    int getNumerator();
+
+    int getDenominator();
+
+
+ private:
+    int numerator;
+    int denominator;
+};

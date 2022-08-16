@@ -1,0 +1,67 @@
+#include <iostream>
+
+#include "List.hpp"
+#include "OrderedPair.h"
+
+using namespace std;
+
+
+int main() {
+    cout << "Inside ListTest.main, about to construct a new list object...." << endl;
+    List<OrderedPair> lop;
+    cout << "The new list looks like:" << endl;
+    lop.print(cout);
+    cout << endl << "And that is all..." << endl;
+
+    cout << "About to push a new ordered Pair on the stack..." << endl;
+    OrderedPair op1(0, 1);
+    lop.push(op1);
+    cout << "Made it past the push command, now the list looks like:" << endl;
+    lop.print(cout);
+    cout << endl << " And that is all" << endl;
+    cout << "About to push another ordered Pair on the stack..." << endl;
+    OrderedPair op2(1, 1);
+    lop.push(op2);
+    cout << "Made it past the second push command, now lop looks like: " << endl;
+    lop.print(cout);
+    cout << endl << "And that is all..." << endl << "About to pop an element off the list..." << endl;
+    OrderedPair popped = lop.pop();
+    cout << "Just popped: " << endl;
+    popped.print(cout);
+    cout << endl << " and that is all..." << endl;
+    cout << "AFter popping, the list looks like: " << endl;
+    lop.print(cout);
+    cout << endl << " And that is all" << endl;
+    cout << "About to pop again..." << endl;
+    popped = lop.pop();
+    cout << "Just popped: " << endl;
+    popped.print(cout);
+    cout << endl << "And now the list looks like:" << endl;
+    lop.print(cout);
+    cout << endl;
+    
+    cout << "About to push a new ordered Pair on the stack..." << endl;
+    lop.push(OrderedPair(0, 1));
+    cout << "Made it past the push command, now the list looks like:" << endl;
+    lop.print(cout);
+    cout << endl << " And that is all" << endl;
+    cout << "About to push another ordered Pair on the stack..." << endl;
+    lop.push(OrderedPair(1, 2));
+    cout << "Made it past the second push command, now lop looks like: " << endl;
+    lop.print(cout);
+    cout << endl << "And that is all..." << endl;
+    cout << "About to dequeue an element from the front..." << endl;
+    popped = lop.dequeue();
+    cout << "dequeued the element: " << endl;
+    popped.print(cout);
+    cout << endl << "And now the list looks like: " << endl;
+    lop.print(cout);
+    cout << endl << "And that is all..." << endl;
+    cout << "ABout to dequeue another element..." << endl;
+    popped = lop.dequeue();
+    cout << "The dequeued element: " << endl;
+    popped.print(cout);
+    cout << endl << "And now the list is: " << endl;
+    lop.print(cout);
+    cout << endl << "And that is all..." << endl;
+}

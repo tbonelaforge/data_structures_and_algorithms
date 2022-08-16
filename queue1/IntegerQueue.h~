@@ -1,0 +1,11 @@
+#ifndef _INTEGER_QUEUE_H_
+#define _INTEGER_QUEUE_H_
+
+class FullQueue {};
+class EmptyQueue {};
+
+class IntegerQueue {
+
+}
+
+#endif

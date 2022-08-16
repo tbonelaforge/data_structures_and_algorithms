@@ -1,0 +1,8 @@
+#include "IntegerQueue.h"
+
+class CountedIntegerQueue : public IntegerQueue {
+ public:
+    int getLength();
+ private:
+    int length;
+}

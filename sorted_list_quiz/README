@@ -1,0 +1,107 @@
+How to build the project
+------------------------
+
+make TestRunner2
+
+_______________________
+How to run tests
+-----------------------
+
+./TestRunner2
+
+
+______________________
+Example Session
+----------------------
+
+
+terrancfordsmbp:sorted_list_quiz tford$ make
+g++ -c SortedList.cpp -o SortedList.o
+g++ -c ItemType.cpp -o ItemType.o
+g++ TestRunner2.cpp SortedList.o ItemType.o -o TestRunner2
+
+terrancfordsmbp:sorted_list_quiz tford$ ./TestRunner2 
+Enter input filename to test:
+end_to_end_test.txt
+Enter output filename to write test results to:
+end_to_end_test.out
+Enter a title for this test run:
+Example Test Run
+Command number 1 completed.
+Command number 2 completed.
+Command number 3 completed.
+Command number 4 completed.
+Command number 5 completed.
+Command number 6 completed.
+Command number 7 completed.
+Command number 8 completed.
+Command number 9 completed.
+Command number 10 completed.
+Command number 11 completed.
+Command number 12 completed.
+Command number 13 completed.
+Command number 14 completed.
+Command number 15 completed.
+Command number 16 completed.
+Command number 17 completed.
+Command number 18 completed.
+Command number 19 completed.
+Command number 20 completed.
+Command number 21 completed.
+Command number 22 completed.
+Command number 23 completed.
+Command number 24 completed.
+Command number 25 completed.
+Command number 26 completed.
+Command number 27 completed.
+Command number 28 completed.
+Command number 29 completed.
+Command number 30 completed.
+Command number 31 completed.
+Command number 32 completed.
+Command number 33 completed.
+Command number 34 completed.
+Command number 35 completed.
+Command number 36 completed.
+
+
+
+_________________________________________
+Example Output File (end_to_end_test.out)
+-----------------------------------------
+Example Test Run
+Length is: 0
+-3 is in list 
+Length is: 1
+[-3]
+Made Empty
+4 is in list 
+5 is in list 
+0 is in list 
+1 is in list 
+Length is: 4
+List is not full.
+6 is in list 
+Length is: 5
+List is full.
+[0, 1, 4, 5, 6]
+20 not in list
+5 found in list
+4 is deleted
+Length is: 4
+[0, 1, 5, 6]
+5 is deleted
+[0, 1, 6]
+-3 is deleted
+[0, 1, 6]
+0 is deleted
+[1, 6]
+1 is deleted
+[6]
+20 is deleted
+Length is: 1
+[6]
+6 is deleted
+Length is: 0
+25 is deleted
+[]

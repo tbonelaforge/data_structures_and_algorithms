@@ -1,0 +1,6 @@
+fraction.o: fraction.cpp
+	g++ -c fraction.cpp -o fraction.o
+
+
+test_runner: test_runner.cpp fraction.o
+	g++ test_runner.cpp fraction.o -o test_runner

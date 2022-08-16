@@ -1,0 +1,5 @@
+number_bucket.o: number_bucket.cpp number_bucket.h
+	g++ -c number_bucket.cpp -o number_bucket.o
+
+number_bucket_test: number_bucket_test.cpp number_bucket.h number_bucket.o
+	g++ number_bucket_test.cpp number_bucket.o -o number_bucket_test

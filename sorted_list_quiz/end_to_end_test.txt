@@ -1,0 +1,36 @@
+getLength
+putItem -3
+getLength
+printSortedList
+makeEmpty
+putItem 4
+putItem 5
+putItem 0
+putItem 1
+getLength
+isFull
+putItem 6
+getLength
+isFull
+printSortedList
+getItem 20
+getItem 5
+deleteItem 4
+getLength
+printSortedList
+deleteItem 5
+printSortedList
+deleteItem -3
+printSortedList
+deleteItem 0
+printSortedList
+deleteItem 1
+printSortedList
+deleteItem 20
+getLength
+printSortedList
+deleteItem 6
+getLength
+deleteItem 25
+printSortedList
+quit

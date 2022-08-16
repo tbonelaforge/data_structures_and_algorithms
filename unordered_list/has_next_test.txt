@@ -1,0 +1,7 @@
+hasNext
+putItem
+3
+hasNext
+deleteItem
+3
+hasNext

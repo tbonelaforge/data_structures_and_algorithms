@@ -1,0 +1,14 @@
+Card.o: Card.cpp Card.h
+	g++ -c Card.cpp -o Card.o
+
+CardTest: CardTest.cpp Card.o Card.h
+	g++ CardTest.cpp Card.o -o CardTest
+
+Deck.o: Deck.cpp Deck.h UnorderedList.h  Card.h
+	g++ -c Deck.cpp -o Deck.o
+
+UnorderedList.o: UnorderedList.cpp UnorderedList.h
+	g++ -c UnorderedList.cpp -o UnorderedList.o
+
+DeckTest: DeckTest.cpp Deck.o Deck.h UnorderedList.o UnorderedList.h Card.o Card.h
+	g++ DeckTest.cpp Deck.o Card.o -o DeckTest

@@ -1,0 +1,11 @@
+
+Initialized fraction: ( 3 / 4 )
+
+
+isZero() => 0
+isNotProper() => 0
+Initialized fraction: ( 4 / 3 )
+
+
+isNotProper() => 1
+convertToProper() => 1 ( 1 / 3 ) 

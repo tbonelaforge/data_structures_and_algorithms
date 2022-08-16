@@ -1,0 +1,7 @@
+PutItem 1
+PutItem 7
+PrintList
+DeleteItem 1
+PrintList
+PutItem 8
+PrintList

@@ -1,0 +1,8 @@
+
+#inclue "Card.h"
+
+void Deck::GenerateDeck() {
+    for (Suits suit in Suits) {
+        
+    }
+}

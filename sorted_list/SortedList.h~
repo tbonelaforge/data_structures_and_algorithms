@@ -1,0 +1,4 @@
+class SortedList {
+ public:
+    SortedList(int maxLength);
+}

@@ -1,0 +1,28 @@
+#include "number_bucket.h"
+#include "node.h"
+
+NumberBucket::NumberBucket() {
+    size = 0;
+}
+
+struct node * NumberBucket::getHead() {
+    return head;
+}
+
+int NumberBucket::getSize() {
+    return size;
+}
+
+void NumberBucket::push(int n) {
+    node * thisNode = new node();
+    thisNode->value = n;
+    thisNode->next = head;
+    head = thisNode;
+    size += 1;
+}
+
+/*
+int NumberBucket::pop() {
+    
+}
+*/

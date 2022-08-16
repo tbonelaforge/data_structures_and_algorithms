@@ -1,0 +1,19 @@
+#include <iostream>
+
+#include "number_bucket.h"
+#include "node.h"
+
+int main() {
+    using namespace std;
+    cout << "I'm about to construct a number_bucket...";
+    NumberBucket numberBucket;
+    cout << "The values of the newly-constructed number_bucket are:" << endl
+         << "head = " << numberBucket.getHead() << endl
+         << "size = " << numberBucket.getSize() << endl;
+    cout << "That is all..." << endl;
+    cout << "Now I am going to push a new value onto the number bucket." << endl;
+    numberBucket.push(3);
+    cout << "Now we have : " << endl
+         << "head = " << numberBucket.getHead() << endl
+         << "size = " << numberBucket.getSize() << endl;
+}
